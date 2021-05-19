@@ -1,0 +1,191 @@
+/* Global css  */
+body,
+h1,
+h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h4 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+.buttonContainer {
+  text-align: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+button,
+button:visited {
+  background-color: #72c3dc;
+  border-radius: 0.5rem;
+  border: 0 solid transparent;
+  color: #ffffff;
+  box-shadow: 0rem 0.2rem 0 #2b8ead;
+  padding: 0.6rem 3rem;
+  line-height: 1rem;
+  display: block;
+  margin: 0px auto 1rem;
+}
+button:active {
+  background-color: #2f454e;
+}
+button:hover {
+  background-color: #2b8ead;
+  border-radius: 0.5rem;
+  border: 0 solid transparent;
+  color: #ffffff;
+  padding: 0.6rem 3rem;
+  line-height: 1.09rem;
+  margin-bottom: 0.92rem;
+}
+
+/* All Small devices ( 576px and below) */
+@media (max-width: 767px) {
+  .Bodywrapper {
+    width: 100%;
+  }
+  h2 {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  .gamewrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .CardContainer {
+    order: 2;
+    display: block;
+  }
+  .buttonContainer {
+    order: 1;
+    display: flex;
+  }
+  .CardContainer div {
+    display: block;
+    background-color: efefef;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    padding: 0.9rem 0.9rem 0.9rem 0rem;
+    text-align: center;
+    position: relative;
+    color: #000;
+  }
+  .CardContainer div:before {
+    content: "";
+    display: table;
+    width: 0.6rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .card1:before {
+    background-color: #6f98a8;
+  }
+  .card2:before {
+    background-color: #2b8ead;
+  }
+  .card3:before {
+    background-color: #2f454e;
+  }
+  .card4:before {
+    background-color: #2b8ead;
+  }
+  .card5:before {
+    background-color: #2e444d;
+  }
+  .card6:before {
+    background-color: #bfbfbf;
+  }
+  .card7:before {
+    background-color: #bfbfbf;
+  }
+  .card8:before {
+    background-color: #6f98a8;
+  }
+  .card9:before {
+    background-color: #2f454e;
+  }
+}
+
+/* // // Medium to large devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Bodywrapper {
+    width: 60%;
+    margin: 0px auto;
+    background-color: #efefef;
+  }
+
+  .gamewrapper {
+    width: auto;
+    display: flex;
+  }
+
+  .CardContainer {
+    display: flex;
+    flex-grow: 3;
+    flex-wrap: wrap;
+  }
+
+  #ControlContainer {
+    /* display: flex; */
+    margin-left: auto;
+    flex-grow: 1;
+  }
+
+  .CardContainer div {
+    padding: 3.6rem;
+    display: flex;
+    flex-grow: 1;
+    font-size: 4rem;
+    color: #fff;
+  }
+
+  .card1 {
+    background-color: #6f98a8;
+  }
+  .card2 {
+    background-color: #2b8ead;
+  }
+  .card3 {
+    background-color: #2f454e;
+  }
+  .card4 {
+    background-color: #2b8ead;
+  }
+  .card5 {
+    background-color: #2e444d;
+  }
+  .card6 {
+    background-color: #bfbfbf;
+  }
+  .card7 {
+    background-color: #bfbfbf;
+  }
+  .card8 {
+    background-color: #6f98a8;
+  }
+  .card9 {
+    background-color: #2f454e;
+  }
+}
